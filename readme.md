@@ -13,3 +13,7 @@ To run a dev server. Opens on http://localhost:5173/
 To generate a build
 
 Currently files are output to `app\build`.
+
+Works with node ^25. 
+
+We recommend using NVM to manage node versions. 
