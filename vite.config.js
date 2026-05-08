@@ -1,19 +1,11 @@
 import { defineConfig } from 'vite';
 import sassGlobImports from 'vite-plugin-sass-glob-import';
-// import path from "path";
-// import { fileURLToPath } from "node:url";
-
-// const pathResolve = (v) => path.resolve(__dirname, v);
 
 const entry = {
     // js
     app: './src/js/app',
     // section css
-    'editor': './src/scss/editor.scss',
-    // properties
-    skin: './src/properties/skin.properties',
-    // xml
-    // navigations: './src/xml/navigations.xml'
+    'editor': './src/scss/editor.scss'
 };
 
 export default defineConfig({

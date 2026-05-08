@@ -1,2 +1,0 @@
-skin.name=PeopleFluent_LMS;skin.description=PeopleFluent_LMS;skin.language=0;skin.iconset=!1;skin.frames=4;skin.menu_position=N;skin.maincontent=0;skin.mainmenu=100;skin.mainstylesheet=main.css;skin.hometx=WIDGETCONTAINERPAGE;skin.showteachbutton=yes;skin.righttoleft=!1;skin.usetab=Y;skin.displaySearchBox=!0;skin.fixed_width=0;skin.homepage_template=Learner9837814;skin.frameless_ui=!0;skin.mouseovermenu=!0;legacy.mode=!0;
-//# sourceMappingURL=app.min3.js.map
