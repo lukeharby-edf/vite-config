@@ -1,0 +1,9 @@
+/* functions variables and mixins */
+@use './functions/*.scss';
+
+/* core */
+@use './core/layout';
+@use './core/responsive';
+
+/* components */
+@use './components/*.scss';

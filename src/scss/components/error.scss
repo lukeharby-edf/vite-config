@@ -1,0 +1,6 @@
+@use '../functions/variables' as vars;
+
+.error {
+    font-family: vars.$font__normal;
+    font-size: 1.25rem;
+}

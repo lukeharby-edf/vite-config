@@ -1,0 +1,32 @@
+
+/* colours */
+$colour__white: #ffffff;
+$colour__grey: #717171;
+$colour__grey--palest: #f9f9f9;
+$colour__black: #000000;
+
+/* typography */
+$font__icon: 'ionicons';
+$font__normal: 'Arial', sans-serif;
+$font__italic: 'Arial italic', sans-serif;
+$font__wegight--normal: 350;
+$font__weight--bold: 600;
+
+$font__size--small: 0.9rem;
+
+/* screensizes */
+$screensizes: (
+    'xxs': '1px',
+    'xs': '480px',
+    'sm': '768px',
+    'md': '992px',
+    'lg': '1220px',
+    'xl': '1540px',
+    'xxl': '1840px',
+    'xxxl': '1920px'
+);
+
+/* responsive */
+$mobile-size: 768px !default;
+$tablet-size: 992px !default;
+$desktop-size: 1220px !default;
