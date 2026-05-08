@@ -1,5 +1,8 @@
+@use '../functions/variables' as vars;
+
 .editor {
-    font-family: monospace;
+    font-family: vars.$font__italic;
+    font-style: italic;
     background-color: white;
     color: #444;
 }

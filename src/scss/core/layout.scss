@@ -7,17 +7,16 @@
 
 * {
     box-sizing: border-box;
-    cursor: none;
 }
 
 body {
+    background-color: vars.$colour__grey--palest;
+    color: vars.$colour__black;
     font-family: vars.$font__normal;
     font-size: 1rem;
     font-weight: vars.$font__wegight--normal;
     margin: 0;
     min-height: 100vh;
-    background-color: vars.$colour__grey;
-    color: vars.$colour__grey--palest;
 
     @include mq.tablet {
         font-size: 1.25rem;
