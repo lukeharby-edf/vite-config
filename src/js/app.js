@@ -1,20 +1,21 @@
 import '../scss/app.scss';
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('sparkline is here');
+    const url = `https://edfenergytest.learning.peoplefluent.net/ekp/api/learningPath?format=json`;
+    const username = import.meta.env.username;
+    const password = import.meta.env.password;
+    const headers = new Headers();
+    headers.set('Authorization', 'Basic ' + btoa(username + ':' + password));
 
-    const baseURL = 'https://api.com/v2';
-    const path = 'endpoint';
-    const apiURL = `${baseURL}/${path}`;
-
-    const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-    const filteredArr = arr.map(item => item >= 4);
-
-    const mappedArr = arr.map(item => item * 2);
-
-    console.log(apiURL);
-    console.log(filteredArr);
-    console.log(mappedArr);
+    fetch(url, {
+        headers,
+        mode: 'no-cors',
+    })
+    .then(data => {
+        console.log(data);
+    })
+    .catch(err => {
+        console.log('Something went wrong.', err);
+    });
 
 });
