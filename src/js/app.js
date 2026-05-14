@@ -2,8 +2,9 @@ import '../scss/app.scss';
 
 document.addEventListener('DOMContentLoaded', () => {
     const url = `https://edfenergytest.learning.peoplefluent.net/ekp/api/learningPath?format=json`;
-    const username = import.meta.env.username;
-    const password = import.meta.env.password;
+    const username = import.meta.env.VITE_USERNAME;
+    const password = import.meta.env.VITE_PASSWORD;
+
     const headers = new Headers();
     headers.set('Authorization', 'Basic ' + btoa(username + ':' + password));
 

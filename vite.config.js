@@ -14,7 +14,11 @@ export default defineConfig({
     ],
     build: {
         rollupOptions: {
-            input: entry,
+            input: {
+                ...entry,
+                accordion: 'components/accordion.html',
+                calendar: 'components/calendar.html'
+            },
             output: {
                 assetFileNames: () => {
                     return `[name][extname]`;
