@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import sassGlobImports from 'vite-plugin-sass-glob-import';
+import htmlMinifier from 'vite-plugin-html-minifier'
 
 const entry = {
     // js
@@ -10,7 +11,10 @@ const entry = {
 
 export default defineConfig({
     plugins: [
-        sassGlobImports()
+        sassGlobImports(),
+        htmlMinifier({
+            minify: true,
+        }),
     ],
     build: {
         rollupOptions: {

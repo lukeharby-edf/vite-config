@@ -9,10 +9,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vite-plugin-html-minifier": "^1.0.5"
   },
   "dependencies": {
-    "dotenv": "^17.4.2",
     "sass-embedded": "^1.99.0",
     "terser": "^5.47.1",
     "vite-plugin-sass-glob-import": "^5.0.0"
