@@ -6,13 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "components": "VITE_IS_COMPONENTS='true' && vite build"
   },
   "devDependencies": {
     "vite": "^6.3.5",
     "vite-plugin-html-minifier": "^1.0.5"
   },
   "dependencies": {
+    "cross-env": "^10.1.0",
     "sass-embedded": "^1.99.0",
     "terser": "^5.47.1",
     "vite-plugin-sass-glob-import": "^5.0.0"
