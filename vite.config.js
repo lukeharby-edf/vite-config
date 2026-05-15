@@ -2,7 +2,6 @@ import { defineConfig, loadEnv } from "vite";
 import path from "node:path";
 import sassGlobImports from "vite-plugin-sass-glob-import";
 import htmlMinifier from "vite-plugin-html-minifier";
-import { glob } from "glob";
 
 let entrypoints = null;
 
@@ -13,17 +12,19 @@ const entry = {
   editor: "./src/scss/editor.scss",
 };
 
+const components = {
+  accordion: "components/accordion.html",
+  calendar: "components/calendar.html",
+};
+
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd());
-  const components = glob.sync(
-    path.resolve(__dirname, "components/", "*.html"),
-  );
-  console.log(components);
-
-  const isComponents = env.VITE_IS_COMPONENTS;
+  const isComponents = env.VITE_IS_COMPONENTS === "true";
   isComponents
     ? (entrypoints = { ...entry, ...components })
     : (entrypoints = entry);
+  console.log(`isComponents: ${isComponents}`);
+
   return {
     plugins: [
       sassGlobImports(),
@@ -34,8 +35,7 @@ export default defineConfig(({ mode }) => {
     build: {
       rollupOptions: {
         input: {
-          ...entry,
-          ...components,
+          ...entrypoints,
         },
         output: {
           assetFileNames: ({ names }) => {
