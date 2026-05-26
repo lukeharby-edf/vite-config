@@ -6,10 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "components": "VITE_IS_COMPONENTS='true' && vite build"
+    "build:widgets": "vite build --config vite.widget.config.js",
+    "preview": "vite preview"
   },
   "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
     "glob": "^13.0.6",
     "vite": "^6.3.5",
     "vite-plugin-html-minifier": "^1.0.5"
