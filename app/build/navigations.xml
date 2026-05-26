@@ -1,0 +1,134 @@
+<navigations xmlns="http://www.netdimensions.com/2010/05/navigations">
+<!-- Main menu START -->
+  <menu cssClassName="main-menu-container">
+    <item labelKey="label.Home" txCode="WIDGETCONTAINERPAGE"/>
+    <item labelKey="label.LearningCentre" txCode="TABLISTSESSIONS">
+      <menu cssClassName="zubmenu">
+        <item labelKey="menu.my.learning_tab" txCode="TABLISTSESSIONS">
+          <tabset heading="menu.my.learning_tab">
+            <tabitem labelKey="desc.my_learning_profile" txCode="TABLISTSESSIONS"/>
+            <tabitem labelKey="heading.Tabs_Transcript" txCode="TABLISTTRAN"/>
+            <tabitem labelKey="label.externalTraining" txCode="TABLISTEXTTRAININGRECORDBROWSER"/>
+            <tabitem labelKey="heading.statement_activity_log" txCode="STATEMENTLOGBROWSER"/>
+          </tabset>
+        </item>
+        <item labelKey="label.Enrollment_Requests" txCode="TABPENDINGENROLLMENTS"/>
+        <item labelKey="label.Certificate" txCode="LISTUSERCERT">
+          <tabset heading="label.Certificate">
+            <tabitem labelKey="label.Certificate" txCode="LISTUSERCERT"/>
+            <tabitem labelKey="label.self_award.tab.certification" txCode="SELFAWARDCERTIFICATIONS"/>
+          </tabset>
+        </item>
+        <item labelKey="heading.TrainingPlan" txCode="GETPLAN"/>
+        <item labelKey="label.LearningPath" txCode="LEARNINGPATH"/>
+        <item labelKey="label.Find_a_Learning_Item" txCode="FramelessCatalogSearch"/>
+        <item labelKey="heading.Catalog_Search" txCode="STRUCTUREDCATALOG"/>
+        <item labelKey="label.Course_Calendar" txCode="SESSIONCAL"/>
+        <item labelKey="catelog.label.tokenPackages" txCode="BUYTOKENPACKAGES"/>
+        <item labelKey="label.CourseCouponEnrollment" txCode="COUPONENROLLMENT"/>
+        <item labelKey="label.Check_Out" txCode="CONFIRM"/>
+      </menu>
+    </item>
+    <item labelKey="label.Workspace" txCode="TABLISTAPPRAISEE">
+      <menu cssClassName="zubmenu">
+        <item labelKey="heading.Review" txCode="TABLISTAPPRAISEE">
+          <tabset heading="heading.Review">
+          <tabitem labelKey="heading.Direct_Appraiser_Review" txCode="TABLISTAPPRAISEE"/>
+          <tabitem labelKey="menu.Group_Review" txCode="LISTSTUDENTS"/>
+          <tabitem labelKey="heading.Organization_Review" txCode="SELORG"/>
+          </tabset>
+        </item>
+      <item labelKey="heading.SupervisorAssessment" txCode="SUPERVISORASSESSMENT"/>
+      <item labelKey="heading.review_enrollment" txCode="REVIEWENROLLMENT"/>
+      <item labelKey="heading.integrated_user_calendar" txCode="INTEGRATEDUSERCALENDAR"/>
+      <item labelKey="label.task_sign_off" txCode="TASKSIGNOFF"/>
+      <item labelKey="heading.pending_assessment" txCode="PENDINGASSESSMENT"/>
+      <item labelKey="heading.Enrollment_Approval" txCode="TABLISTAPPROVALS"/>
+      <item labelKey="heading.Withdrawal_Approval" txCode="TABLISTWITHDRAWREQUESTS"/>
+      <item labelKey="label.ExternalTrainingApproval" txCode="TABLISTEXTTRAINAPPR"/>
+      <item labelKey="heading.certifications_approval" txCode="CERTIFICATIONAPPROVAL"/>
+      <item labelKey="label.AppraisalReview" txCode="REVIEWERAPPRAISALSEARCH"/>
+      <item labelKey="heading.Enrollment_Wizard" txCode="ENROLLMENTWIZARD"/>
+      <item labelKey="heading.course_checklist" txCode="ALLCOURSECHECKLISTBROWSER"/>
+      <item labelKey="heading.compliance_analysis" txCode="COMPLIANCEANALYSISBROWSER"/>
+    </menu>
+    </item>
+    <item labelKey="label.Connect" txCode="MASSMAILSENDER">
+      <menu cssClassName="zubmenu">
+        <item labelKey="heading.Mass_Mail" txCode="MASSMAILSENDER"/>
+      </menu>
+    </item>
+    <item labelKey="label.Reports" txCode="DASHBOARD">
+    <menu cssClassName="zubmenu">
+      <item labelKey="header.Dashboard" txCode="DASHBOARD"/>
+      <item labelKey="menu.Report_Manager" txCode="LISTREPORT"/>
+      <item labelKey="heading.watershedreports" txCode="WSANALYTICS"/>
+    </menu>
+    </item>
+    <item labelKey="heading.th.teach" txCode="TEACHREVIEW">
+      <menu cssClassName="zubmenu">
+        <item labelKey="tab.Active" txCode="TEACHREVIEW"/>
+        <item labelKey="tab.Archive" txCode="TEACHREVIEWARCHIVE"/>
+        <item labelKey="tab.Administrative" txCode="TEACHREVIEWADMIN"/>
+      </menu>
+    </item>
+    <item labelKey="Communicator Toolbox" externalUrl="https://edfenergytest.learning.peoplefluent.net/ekp/servlet/ekp/GETARTICLE?AID=EKP000005607" showTitle="false"/>
+    <item labelKey="Partner Admin Toolbox" externalUrl="https://edfenergytest.learning.peoplefluent.net/ekp/servlet/ekp/GETARTICLE?AID=EKP000006808" showTitle="false"/>
+    <item labelKey="Course Admin Toolbox" externalUrl="https://edfenergytest.learning.peoplefluent.net/ekp/servlet/ekp/GETARTICLE?AID=EKP000007209" showTitle="false"/>
+    <item labelKey="Security/Dosimetry Toolbox" externalUrl="https://edfenergytest.learning.peoplefluent.net/ekp/servlet/ekp/GETARTICLE?AID=EKP000008412" showTitle="false"/>
+    <item labelKey="User Manager" externalUrl="https://edfenergytest.learning.peoplefluent.net/ekp/servlet/ekp/GETARTICLE?AID=EKP000013615" showTitle="false"/>
+    </menu>
+<!-- Main menu END -->
+<!-- Help menu START -->
+  <menu cssClassName="help-menu-container">
+    <item labelKey="Help" showTitle="false">
+      <menu cssClassName="help-submenu">
+        <item labelKey="Getting Started" externalUrl="/nd/fresco/repository/EKP000071614.pdf" targetLocation="_blank">
+          <menu cssClassName="getting-started-submenu">
+            <item labelKey="Accessing current &amp; past learning" externalUrl="/nd/fresco/repository/EKP000071405.pdf" targetLocation="_blank"/>
+            <item labelKey="Find &amp; enrol onto new courses" externalUrl="/nd/fresco/repository/EKP000071614.pdf" targetLocation="_blank"/>
+            <item labelKey="Launch a course" externalUrl="/nd/fresco/repository/EKP000001610/Learner/Lauch%20Online%20Course.pdf" targetLocation="_blank"/>
+            <item labelKey="Video: Learner Introduction" externalUrl="https://youtu.be/wwj6dMI7iOg" targetLocation="_blank"/>
+            <item labelKey="FAQs" externalUrl="/nd/fresco/repository/EKP000063263.pdf" targetLocation="_blank"/>
+          </menu>
+        </item>
+      </menu>
+    </item>
+  </menu>
+<!-- Help menu END -->
+<!-- Logged out main menu START -->
+    <menu cssClassName="main-menu-container" authenticated="FALSE">
+    <item labelKey="heading.Catalog_Browser" txCode="STRUCTUREDCATALOG?PARENTTX=PUBLICCATALOGTX"/>
+    <item labelKey="shopping.cart.page.heading" txCode="EDITSHOPPINGCART"/>
+    <item labelKey="desc.login" txCode="LOGIN"/>
+    </menu>
+<!-- Logged out main menu END -->
+<!-- Profile menu START -->
+    <menu cssClassName="sec-menu-container menu-bar">
+    <item labelKey="label.iPaaS.col_ipaas" isIPaaSSwitcher="true" showTitle="false"/>
+    <item labelKey="[username]" externalUrl="#" showTitle="false"/>
+    <item labelKey="" isAvatar="true" showTitle="false">
+    <menu cssClassName="zubmenu">
+      <item labelKey="heading.My_Profile" txCode="DISPLAY" showTitle="false">
+        <tabset heading="heading.Settings">
+          <tabitem txCode="DISPLAY" labelKey="menu.Preferences"/>
+          <tabitem txCode="EDITORGASSOCIATIONS" labelKey="menu.editOrg"/>
+          <tabitem txCode="TABBIO" labelKey="heading.Edit_Profile"/>
+          <tabitem txCode="ADDRESS" labelKey="menu.Address_Administration"/>
+          <tabitem txCode="CHANGEPW" labelKey="heading.Change_Password"/>
+          <tabitem txCode="LISTACCT" labelKey="heading.My_Accounts"/>
+          <tabitem txCode="USERTXHIST" labelKey="heading.PaymentHistory"/>
+          <tabitem txCode="TERMSOFUSESUMMARY" labelKey="heading.Terms_Of_Use"/>
+        </tabset>
+      </item>
+      <item labelKey="heading.manage_center" txCode="BSTOC" showTitle="false"></item>
+      <item labelKey="label.personalcalendar" txCode="PERSONALCAL"></item>
+      <item labelKey="heading.My.Files" txCode="EDITSHAREDFILES" />
+      <item labelKey="desc.mail" txCode="LISTMSGS"/>
+      <item labelKey="skin.logout" txCode="LOGOFF" targetLocation="_top" showTitle="false"></item>
+    </menu>
+    </item>
+    
+  </menu>
+    <!-- Profile menu END -->
+</navigations>

@@ -12,19 +12,7 @@ const entry = {
   editor: "./src/scss/editor.scss",
 };
 
-const components = {
-  accordion: "components/accordion.html",
-  calendar: "components/calendar.html",
-};
-
-export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, process.cwd());
-  const isComponents = env.VITE_IS_COMPONENTS === "true";
-  isComponents
-    ? (entrypoints = { ...entry, ...components })
-    : (entrypoints = entry);
-  console.log(`isComponents: ${isComponents}`);
-
+export default defineConfig(() => {
   return {
     plugins: [
       sassGlobImports(),
@@ -35,12 +23,12 @@ export default defineConfig(({ mode }) => {
     build: {
       rollupOptions: {
         input: {
-          ...entrypoints,
+          ...entry,
         },
         output: {
           assetFileNames: ({ names }) => {
             const ext = path.extname(names.find(() => true));
-            return `[name][extname]`;
+            return `[ext]/[name][extname]`;
           },
           chunkFileNames: "main.min.js",
           entryFileNames: "main.min.js",
