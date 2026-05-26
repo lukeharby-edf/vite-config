@@ -1,0 +1,25 @@
+<div class="sample">
+    Hi
+</div>
+
+<script>
+    const url = 'https://url.com';
+    const folder = 'api/v2';
+    const params = '?format=json';
+    const fullPath = `${url}/${folder}/${params}`;
+
+    console.log(fullPath);
+
+    const someObject = {
+        data: [1, 2, 3],
+        nested: {
+            item1: "one",
+            item2: "two",
+            item3: "three"
+        }
+    }
+
+    const isNested = someObject?.nested?.item1;
+
+    console.log(isNested);
+</script>

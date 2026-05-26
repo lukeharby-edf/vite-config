@@ -4,6 +4,7 @@ import fs from 'fs';
 import { transformAsync } from '@babel/core';
 
 const widgets = {
+    sample: 'widgets/sample.html',
     accordion: "widgets/accordion.html",
     calendar: "widgets/calendar.html",
 };
@@ -17,7 +18,7 @@ const processHTMLWidgets = {
             // Transpile inline JavaScript
             html = await transformInlineScripts(html);
             
-            return `export default ${JSON.stringify(html)};`;
+            return html;
         }
     }
 }; 
