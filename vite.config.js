@@ -3,8 +3,6 @@ import path from "node:path";
 import sassGlobImports from "vite-plugin-sass-glob-import";
 import htmlMinifier from "vite-plugin-html-minifier";
 
-let entrypoints = null;
-
 const entry = {
   // js
   main: "./src/js/app",
