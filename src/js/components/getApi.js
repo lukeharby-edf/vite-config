@@ -21,6 +21,7 @@ const csvToJSON = (csv) => {
     const lines = csv.split('\n');
     const result = [];
     let headers;
+    // replace any spaces and hyphens with underscores and lower case text
     headers = lines[0].toLowerCase().replace(/ |-/g,'_');
     headers = headers.replace(/"/g, '');
     
@@ -35,6 +36,7 @@ const csvToJSON = (csv) => {
 
         const words = lines[i].split(',');
         for(let j = 0; j < words.length; j++) {
+            // replace additional quute marks around strings
             obj[headers[j].trim()] = words[j].replace(/"/g, '');
         }
         
